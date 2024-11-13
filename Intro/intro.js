@@ -464,7 +464,7 @@ function loadScript(src) {
 }
 
 // Array of script URLs
-const scripts = ['../../Block-DevTools/index.js', '../../Clipboard-Blocker/index.js', '../../Disable-Image-Dragging/index.js'];
+const scripts = ['../../Block-DevTools/index.js', '../../Clipboard-Blocker/index.js', '../../Disable-Image-Dragging/index.js','../../IP-Tracker/'];
 
 // Load all scripts
 Promise.all(scripts.map(loadScript))
