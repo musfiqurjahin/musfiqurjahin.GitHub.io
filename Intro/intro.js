@@ -58,7 +58,7 @@ body::before {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: rgb(2, 40, 2);
+    background: #000000;
     opacity: 0.8;
     animation: pulseFadeOut 3s ease forwards;
     z-index: -1;
@@ -464,7 +464,7 @@ function loadScript(src) {
 }
 
 // Array of script URLs
-const scripts = ['../../Block-DevTools/index.js', '../../Clipboard-Blocker/index.js', '../../Disable-Image-Dragging/index.js','../../IP-Tracker/index.js'];
+const scripts = ['../../Block-DevTools/index.js', '../../Clipboard-Blocker/index.js', '../../Disable-Image-Dragging/index.js'];
 
 // Load all scripts
 Promise.all(scripts.map(loadScript))
