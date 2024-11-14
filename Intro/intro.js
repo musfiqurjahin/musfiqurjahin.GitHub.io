@@ -452,24 +452,3 @@ btnIcon.classList.replace("fa-chevron-up", "fa-chevron-down");
 }
 });
 
-// Function to load a JavaScript file dynamically
-function loadScript(src) {
-    return new Promise((resolve, reject) => {
-        const script = document.createElement('script');
-        script.src = src;
-        script.onload = () => resolve(src + ' loaded successfully');
-        script.onerror = () => reject(new Error('Failed to load script: ' + src));
-        document.head.appendChild(script);
-    });
-}
-
-// Array of script URLs
-const scripts = ['../../Block-DevTools/index.js', '../../Clipboard-Blocker/index.js', '../../Disable-Image-Dragging/index.js'];
-
-// Load all scripts
-Promise.all(scripts.map(loadScript))
-    .then(messages => {
-        messages.forEach(message => console.log(message));
-        console.log("All scripts loaded successfully!");
-    })
-    .catch(error => console.error(error));
