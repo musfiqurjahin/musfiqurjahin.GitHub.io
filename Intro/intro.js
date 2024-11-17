@@ -392,7 +392,7 @@ document.body.innerHTML = `
             <!---->
                 
                 <span class="title">
-                    <i class="fas fa-microchip"></i> Technophile
+                    <i class="fa-solid fa-microchip"></i> Technophile
                 </span>
                 &nbsp;
                 <span class="title">
